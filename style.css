@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'RocGrotesk';
+    src: url('RocGrotesk-Regular.woff2') format('woff2'),
+        url('RocGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html, body{
+/*	font-family: 'Playfair Display', serif; */
+font-family: 'Space Grotesk', sans-serif;
+	/* font-family: 'RocGrotesk'; */
+	padding: 0;
+	margin: 0;
+	font-weight: 300;
+}
+
+
+.black{
+	background: #000;
+}
+
+
+.container{
+	max-width: 1700px;
+	
+	margin: 0 auto;
+	padding: 0px 30px;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0px;
+	align-items: center;
+}
+
+.header ul{
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.logo{
+	color: #fff;
+	font-size: 24px;
+}
+
+.header ul a{
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	position: relative;
+}
+
+.header ul a.active::after{
+	width: 100% !important;
+
+}
+
+.header ul a::after{
+	content: '';
+	
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -5px;
+	width:  0;
+	transition: width 0.2s linear;
+
+}
+
+.header ul a:hover::after{
+	width: 100%;
+}
+
+.header ul li{
+	margin-right: 20px;
+}
+
+.header ul li:last-child{
+	margin: 0;
+}
+
+
+.descr{
+	font-size: 38px;
+	color: #fff;
+	padding: 50px 0px;
+	margin: 0;
+	max-width: 1130px;
+}
+
+.works__title{
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	padding: 20px 0px;
+}
+
+
+.works__inner-grid{
+	display: flex;
+	flex-wrap: wrap;
+	
+	width: 100%;
+	justify-content: space-between;
+}
+
+.works__inner-grid .works__item{
+	width: 48%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.works__inner .works__item img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.2s linear;
+
+}
+
+.works__inner .works__item:hover img{
+	transform: scale(1.08);
+	opacity: 0.7;
+}
+
+
+.works__item-text{
+	width: 100%;
+	position: absolute;
+	height: 30%;
+	color: #fff;
+	font-size: 14px;
+	padding: 15px;
+	padding-right: 15px;
+	background-color: rgba(0,0,0,0.5);
+	bottom: -500px;
+	left: 0;
+	opacity: 0;
+
+	transition: all 0.2s linear;
+	box-sizing: border-box;
+}
+
+
+.video{
+	width: 100%;
+	height: 500px;
+
+}
+
+.video iframe{
+width: 100% !important;
+height: 100% !important;
+
+}
+
+
+.works__inner .works__item:hover .works__item-text{
+	bottom: 0;
+	opacity: 1;
+}
+
+.works__inner-rows{
+	display: flex;
+	flex-direction: column;
+}
+
+.works__inner-rows .works__item{
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	max-height: 600px;
+	margin-bottom: 30px;
+
+	position: relative;
+}
+
+.works__inner-rows .works__item img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.footer{
+	background: black;
+}
+
+.footer__inner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 60px 0px;
+}
+
+.footer .social{
+	display: flex;
+	align-items: center;
+}
+
+.footer .social a{
+	margin-right: 10px;
+	transition: opacity 0.2s linear;
+}
+
+.footer .social a:hover{
+	opacity: 0.7;
+}
+
+.footer .social a:last-child{
+	margin-right: 0;
+}
+
+.header--white a, .header--white .logo{
+	color: #131313 !important;
+}
+
+.header--white a::after{
+	background-color: #131313 !important;
+}
+
+
+main .content{
+	max-width: 768px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+main .content p{
+	color: #1313131;
+	font-size: 24px;
+}
+
+main .content img{
+	width: 100%;
+	height: auto;
+	margin: 20px 0px;
+}
+
+main .content a{
+	opacity: 0.8;
+	transition: all 0.2s linear;
+	color: #131313;
+}
+
+main .content a:hover{
+	opacity: 0.5;
+}
+
+.black main .content, .black main .content a{
+	color: #fff !important;
+}
+
+
+
+@media (max-width: 991px){
+	.works__item-text{
+		height: 45%;
+	}
+
+
+}
+
+@media (max-width: 768px){
+	.works__inner-grid{
+		flex-direction: column;
+	}
+
+	.works__inner-grid .works__item{
+		width: 100%;
+	}
+
+	.descr{
+		font-size: 24px;
+	}
+
+	main .content p{
+		font-size: 18px;
+	}
+
+	.video{
+		height: 320px;
+	}
+}
+
+
+
+
+
