@@ -98,7 +98,7 @@ font-family: 'Space Grotesk', sans-serif;
 
 .works__title{
 	display: inline-block;
-	font-size: 18px;
+	font-size: 36px;
 	color: red;
 	padding: 20px 0px;
 }
@@ -139,7 +139,7 @@ font-family: 'Space Grotesk', sans-serif;
 	position: absolute;
 	height: 30%;
 	color: #fff;
-	font-size: 14px;
+	font-size: 24px;
 	padding: 15px;
 	padding-right: 15px;
 	background-color: rgba(0,0,0,0.5);
