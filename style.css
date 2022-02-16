@@ -27,7 +27,8 @@ font-family: 'Space Grotesk', sans-serif;
 	max-width: 1700px;
 	
 	margin: 0 auto;
-	padding: 0px 30px;
+	/*padding: 0px 30px;*/
+	padding: 0px 20px;
 }
 
 .header__inner{
