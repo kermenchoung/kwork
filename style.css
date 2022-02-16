@@ -113,10 +113,12 @@ font-family: 'Space Grotesk', sans-serif;
 }
 
 .works__inner-grid .works__item{
-	width: 48%;
+	/*width: 48%;*/
+	width: 25%;
 	height: auto;
 	overflow: hidden;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
+	margin-bottom: 0px;
 	position: relative;
 }
 
