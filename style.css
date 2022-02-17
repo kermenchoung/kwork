@@ -385,6 +385,11 @@ main .content a:hover{
 	}
 }
 
+.box{
+	width:100px;
+	height:400px;
+	color: red;
+}
 
 
 
