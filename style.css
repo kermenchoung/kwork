@@ -390,6 +390,7 @@ main .content a:hover{
 }
 .dropdown-content a h3 {
     padding: 2px 0px;
+    width: 145px;
 }
 
 .dropdown-content a:hover::after {
