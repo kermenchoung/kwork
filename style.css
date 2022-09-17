@@ -385,6 +385,7 @@ main .content a:hover{
 	color: red;
 }
 .dropdown-content a h3 {
+    font-weight: 300 !important;
     padding: 2px 0px;
     width: auto;
 }
