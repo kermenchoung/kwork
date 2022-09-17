@@ -1,19 +1,18 @@
-@font-face {
+/* @font-face {
     font-family: 'RocGrotesk';
     src: url('RocGrotesk-Regular.woff2') format('woff2'),
         url('RocGrotesk-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+} */
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 html, body{
-/*	font-family: 'Playfair Display', serif; */
-font-family: 'Space Grotesk', sans-serif;
-	/* font-family: 'RocGrotesk'; */
-	padding: 0;
-	margin: 0;
+   font-family: 'Space Grotesk', sans-serif;
+   padding: 0;
+   margin: 0;
    font-weight: 300;
 }
 
@@ -31,31 +30,26 @@ margin: 0;
 .dropdown-content {
   display: none;
   position: absolute;
-
-
- 
-  
-
   z-index: 1;
 }
 
 .dropdown-content a {
   color: white;
   /*padding: 12px 16px;*/
-
   text-decoration: none;
   display: block;
 }
 
 
 
-.dropdown:hover .dropdown-content {display: block;
+.dropdown:hover .dropdown-content {
+	display: block;
 }
 
 .dropdown-content a {
   color: red;
   padding: 0px 16px;
-  margin-left: -80px;
+  margin-left: -15px;
   text-align: left;
   text-decoration: none;
   display: block;
@@ -111,7 +105,6 @@ margin: 0;
 
 .container{
 	max-width: 1700px;
-	
 	margin: 0 auto;
 	/*padding: 0px 30px;*/
 	padding: 0px 20px;
@@ -150,7 +143,6 @@ margin: 0;
 
 .header ul a::after{
 	content: '';
-	
 	height: 1px;
 	background-color: #fff;
 	position: absolute;
@@ -167,7 +159,7 @@ margin: 0;
 }
 
 .header ul li{
-	margin-right: 50px;
+	margin-right: 120px;
 }
 
 .header ul li:last-child{
@@ -392,7 +384,14 @@ main .content a:hover{
 	height:500px;
 	color: red;
 }
+.dropdown-content a h3 {
+    padding: 2px 0px;
+    width: auto;
+}
 
+.dropdown-content a:hover::after {
+    width: 125px !important;
+}
 
 
 
