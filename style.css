@@ -29,13 +29,9 @@ margin: 0;
 }
 
 .dropdown-content {
+  margin-left: 65px;
   display: none;
   position: absolute;
-
-
- 
-  
-
   z-index: 1;
 }
 
@@ -167,7 +163,7 @@ margin: 0;
 }
 
 .header ul li{
-	margin-right: 50px;
+	margin-right: 100px;
 }
 
 .header ul li:last-child{
@@ -392,7 +388,13 @@ main .content a:hover{
 	height:500px;
 	color: red;
 }
+.dropdown-content a h3 {
+    padding: 2px 0px;
+}
 
+.dropdown-content a:hover::after {
+    width: 125px !important;
+}
 
 
 
