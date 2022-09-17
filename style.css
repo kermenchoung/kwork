@@ -390,7 +390,7 @@ main .content a:hover{
 }
 
 .dropdown-content a:hover::after {
-    width: 100% !important;
+    width: 125px !important;
 }
 
 
