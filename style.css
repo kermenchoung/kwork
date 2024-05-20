@@ -169,7 +169,7 @@ margin: 0;
 
 .descr{
 	font-size: 28px;
-	color: #000;
+	color: white;
 	padding: 30px 0px;
 	margin: 0;
 
@@ -279,7 +279,7 @@ height: 100% !important;
 }
 
 .footer{
-	background: white;
+	background: black;
 }
 
 .footer__inner{
